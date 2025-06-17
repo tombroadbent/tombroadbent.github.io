@@ -28,6 +28,20 @@ window.sectionsData = [
                     '**All Shortcut:** At the bottom of the section shortcuts, **All** displays the entire content and saves current position (other section buttons go to the top).',
                 ],
             },
+            { type: 'subheader', text: 'Full-Screen Mode (iOS)' },
+            {
+                type: 'paragraph',
+                text: 'The app works best in full-screen mode. To enable full-screen (i.e. hide the toolbar) on iOS Safari:',
+            },
+            {
+                type: 'list-item-hanging-indent',
+                items: [
+                    'Tap the **aA button** in the address bar or the **Reader View button** (three lines).',
+                    'Select "**Hide Toolbar**" from the menu (may be under "..." button).',
+                    'Pull down to refresh the page (after toolbar is hidden) to reset layout.',
+                    'Note: can customize this menu for one-tap access.',
+                ],
+            },
             { type: 'subheader', text: 'Mobile & Tablet' },
             {
                 type: 'list-item-hanging-indent',
