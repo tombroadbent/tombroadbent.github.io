@@ -7,7 +7,7 @@ window.sectionsData = [
         content: [
             {
                 type: 'paragraph',
-                text: 'Welcome! Here are some tips to help you get the most out of this content:',
+                text: 'Welcome! Here are some tips to help get the most out of this content:',
             },
             { type: 'subheader', text: 'Content Interaction' },
 
@@ -15,7 +15,7 @@ window.sectionsData = [
                 type: 'list-item-hanging-indent',
                 items: [
                     '**Tap to Expand Text & Images:** Tap on most **paragraphs** to see them in a larger, easier-to-read font. Tapping on an **image** will also open a full-screen version.',
-                    '**Long Press for Scripture References:** Scripture reference like John 3:16 support **long-press** to open the passage directly in your Church Library app.',
+                    '**Long Press for Scripture References:** Scripture reference like John 3:16 support **long-press** to open the passage directly in the Church Library app.',
                 ],
             },
             { type: 'subheader', text: 'Section Navigation' },
@@ -46,7 +46,7 @@ window.sectionsData = [
             {
                 type: 'list-item-hanging-indent',
                 items: [
-                    '**iPad "Slide Over":** The **< > button** (top) creates space for the "Slide Over" feature, allowing you to use your Library app side-by-side with this content.',
+                    '**iPad "Slide Over":** The **< > button** (top) creates space for the "Slide Over" feature, allowing the Library app to work side-by-side with this content.',
                     '**Hidden Shortcuts on Mobile:** On smaller screens, section shortcuts are hidden to maximize content.'
                 ],
             },
