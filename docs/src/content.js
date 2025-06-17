@@ -1,4 +1,4 @@
-window.appTitle = 'Lorum Ipsum Content Demo';
+window.appTitle = 'Demo';
 window.sectionsData = [
     {
         id: 'paragraph_and_subheader_demo',
