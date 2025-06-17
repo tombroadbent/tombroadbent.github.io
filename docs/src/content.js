@@ -1,6 +1,44 @@
 window.appTitle = 'Demo';
 window.sectionsData = [
     {
+        id: 'intro',
+        title: 'Tips & Tricks',
+        navTitle: 'Intro',
+        content: [
+            {
+                type: 'paragraph',
+                text: 'Welcome! Here are some tips to help you get the most out of this content:',
+            },
+            { type: 'subheader', text: 'Content Interaction' },
+
+            {
+                type: 'list-item-hanging-indent',
+                items: [
+                    '**Tap to Expand Text & Images:** Tap on most **paragraphs** to see them in a larger, easier-to-read font. Tapping on an **image** will also open a full-screen version.',
+                    '**Long Press for Scripture References:** Scripture reference like John 3:16 support **long-press** to open the passage directly in your Church Library app.',
+                ],
+            },
+            { type: 'subheader', text: 'Section Navigation' },
+            {
+                type: 'list-item-hanging-indent',
+                items: [
+                    '**Left/Right:** Use the **left and right arrow buttons** to move between primary sections.',
+                    '**Up/Down:** Use the **up and down arrow buttons** to navigate subsections within a primary section.',
+                    '**Section Shortcuts:** Quick access to each primary section (hidden on small screens).',
+                    '**All Shortcut:** At the bottom of the section shortcuts, **All** displays the entire content and saves current position (other section buttons go to the top).',
+                ],
+            },
+            { type: 'subheader', text: 'Mobile & Tablet' },
+            {
+                type: 'list-item-hanging-indent',
+                items: [
+                    '**iPad "Slide Over":** The **< > button** (top) creates space for the "Slide Over" feature, allowing you to use your Library app side-by-side with this content.',
+                    '**Hidden Shortcuts on Mobile:** On smaller screens, section shortcuts are hidden to maximize content.'
+                ],
+            },
+        ],
+    },
+    {
         id: 'paragraph_and_subheader_demo',
         title: 'Basic Paragraph and Subheader Demonstration',
         navTitle: 'Basic',
