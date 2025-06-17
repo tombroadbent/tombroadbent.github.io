@@ -1,9 +1,152 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Markdown Parser App</title>
 
-<h1>Testing Pages</h1>
-<p>Hello from Pages.</p>
+    <!-- Load React, ReactDOM, and Babel for in-browser JSX transformation -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
+    <!-- Load Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div id="root"></div>
+
+    <!-- The React application code with JSX -->
+    <script type="text/babel">
+        /**
+         * Parses a single string for basic Markdown syntax and returns an array of
+         * strings and React elements.
+         * @param {string} text - The string to parse.
+         * @param {number} baseKey - A base number to create unique keys for the elements.
+         * @returns {Array<string|React.ReactElement>} An array of mixed strings and elements.
+         */
+        function parseStringForMarkdown(text, baseKey = 0) {
+            if (!text) {
+                return [];
+            }
+
+            // Regex to match **strong**, __strong__, *em*, and \n.
+            const markdownRegex = /\*\*([\s\S]+?)\*\*|__([\s\S]+?)__|\*([\s\S]+?)\*|\n/g;
+            const parts = [];
+            let lastIndex = 0;
+            let match;
+
+            while ((match = markdownRegex.exec(text)) !== null) {
+                // Add any plain text before the match
+                if (match.index > lastIndex) {
+                    parts.push(text.substring(lastIndex, match.index));
+                }
+
+                const [fullMatch, strongDouble, strongUnderscore, em] = match;
+                const key = `${baseKey}-${lastIndex}`;
+
+                if (strongDouble) {
+                    parts.push(React.createElement('strong', { key }, strongDouble));
+                } else if (strongUnderscore) {
+                    parts.push(React.createElement('strong', { key }, strongUnderscore));
+                } else if (em) {
+                    parts.push(React.createElement('em', { key }, em));
+                } else if (fullMatch === '\n') {
+                    parts.push(React.createElement('br', { key }));
+                }
+                lastIndex = markdownRegex.lastIndex;
+            }
+
+            // Add any remaining plain text
+            if (lastIndex < text.length) {
+                parts.push(text.substring(lastIndex));
+            }
+
+            return parts;
+        }
+
+        /**
+         * Iterates over an array of mixed strings and React elements, parsing
+         * only the strings for Markdown.
+         * @param {Array<string|React.ReactElement>} content - The array to process.
+         * @returns {Array<string|React.ReactElement>} A flattened array ready for rendering.
+         */
+        function parseMarkdownForReact(content) {
+            if (!Array.isArray(content)) {
+                if (typeof content === 'string') {
+                    content = [content];
+                } else {
+                    return [];
+                }
+            }
+
+            const processedParts = [];
+            content.forEach((item, index) => {
+                if (typeof item === 'string') {
+                    const parsed = parseStringForMarkdown(item, index);
+                    processedParts.push(...parsed);
+                } else if (item) {
+                    processedParts.push(item);
+                }
+            });
+
+            return processedParts;
+        }
+
+        // --- React App Component ---
+        function App() {
+            const [markdownText, setMarkdownText] = React.useState(
+`**Hello, world!**
+This is a *simple* React app.
+
+Here is some __strongly emphasized text__.
+And here is a line break.`
+            );
+
+            // Parse the text from the textarea
+            const renderedOutput = parseMarkdownForReact(markdownText);
+
+            return (
+                <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+                    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                        <div className="p-6">
+                           <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Live Markdown Parser</h1>
+                           <p className="text-gray-600 dark:text-gray-400 mb-6">Type some markdown in the text area below to see it rendered live.</p>
+
+                           <div className="grid md:grid-cols-2 gap-6">
+                               <div>
+                                   <label htmlFor="markdown-input" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Markdown Input</label>
+                                   <textarea
+                                       id="markdown-input"
+                                       className="w-full h-64 p-3 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                       value={markdownText}
+                                       onChange={(e) => setMarkdownText(e.target.value)}
+                                   />
+                               </div>
+                               <div>
+                                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">React Output</label>
+                                   <div className="w-full h-64 p-3 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900/50">
+                                       {renderedOutput}
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // Render the App component to the DOM
+        ReactDOM.render(<App />, document.getElementById('root'));
+
+    </script>
 </body>
 </html>
+
