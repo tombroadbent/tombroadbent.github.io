@@ -1,0 +1,105 @@
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Custom CSS for hanging indent list items, as Tailwind doesn't have a direct utility */
+    .list-item-hanging-indent {
+      list-style: none;
+      /* Remove default bullet */
+      padding-left: 1.5em;
+      /* Space for content after pseudo-bullet */
+      position: relative;
+      /* For positioning the pseudo-bullet */
+    }
+
+    .list-item-hanging-indent::before {
+      content: "•";
+      /* Custom bullet point */
+      position: absolute;
+      left: 0;
+      /* Align bullet to the left edge of the padding */
+      top: 0;
+      /* Align with the top of the text */
+      font-weight: bold;
+      /* Make the bullet more prominent */
+      color: #3b82f6;
+      /* Blue color for the bullet (Tailwind blue-500 equivalent) */
+    }
+
+    /* Ensure main content is scrollable and takes remaining height */
+    .main-content-scrollable {
+      max-height: 100vh;
+      /* Adjust based on header/footer if present */
+      overflow-y: auto;
+    }
+
+    /* Responsive adjustments for navigation on small screens */
+    @media (max-width: 767px) {
+      .main-content-scrollable {
+        padding-right: 1.5rem;
+      }
+
+      .md\\:pr-36 {
+        padding-right: 1.5rem;
+        /* Override large right padding for mobile */
+      }
+
+      .md\\:fixed {
+        position: relative;
+        /* Override fixed positioning on mobile */
+        top: auto;
+        right: auto;
+      }
+
+      .md\\:h-screen {
+        height: auto;
+        /* Override full screen height on mobile */
+      }
+
+      /* Make nav buttons horizontal on mobile */
+      .md\\:w-28 {
+        width: 100%;
+      }
+
+      .md\\:flex-col {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .space-y-0>li {
+        flex-grow: 1;
+        /* Distribute buttons evenly */
+      }
+
+      .space-y-0 {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow navigation items to wrap if too many */
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .md\\:flex-col .mt-8 {
+        margin-top: 1rem;
+      }
+
+      .md\\:flex-col .mt-4 {
+        margin-top: 1rem;
+      }
+
+      .md\\:flex-col .space-y-4>*:not(:last-child) {
+        margin-bottom: 0 !important;
+        /* Reset vertical spacing */
+        margin-right: 1rem;
+        /* Add horizontal spacing */
+      }
+
+      .md\\:flex-col .flex-col {
+        flex-direction: row;
+        /* Make button groups horizontal */
+        align-items: center;
+        justify-content: center;
+      }
+    }
