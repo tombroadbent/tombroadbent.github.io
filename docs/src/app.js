@@ -1,6 +1,12 @@
 
 window.App = () => {
-    const [activeSectionId, setActiveSectionId] = React.useState(window.sectionsData[0].id);
+    window.appTitle = window.appTitle || 'Choose Content';
+    window.sectionsData = window.sectionsData || [];
+    const [appTitle, setAppTitle] = React.useState('Choose Content');
+    const [sectionsData, setSectionsData] = React.useState([]);
+    const [activeSectionId, setActiveSectionId] = React.useState(() => {
+        return sectionsData.length > 0 ? sectionsData[0].id : null;
+    });
     const navListRef = React.useRef(null);
     const [allPageSavedScrollOffset, setAllPageSavedScrollOffset] = React.useState(0);
 
@@ -98,7 +104,7 @@ window.App = () => {
             }
             setAllPageSavedScrollOffset(closestHeadingOffset);
         }
-        setActiveSectionId(window.sectionsData[0].id);
+        setActiveSectionId(sectionsData[0].id);
         return;
     }
 
@@ -107,18 +113,18 @@ window.App = () => {
             goToAllPage();
             return;
         }
-        const currentIndex = window.sectionsData.findIndex(section => section.id === activeSectionId);
+        const currentIndex = sectionsData.findIndex(section => section.id === activeSectionId);
         if (currentIndex === -1) return;
 
         let newIndex;
         if (direction === 'next') {
-            newIndex = (currentIndex + 1) % window.sectionsData.length;
+            newIndex = (currentIndex + 1) % sectionsData.length;
         } else if (direction === 'prev') {
-            newIndex = (currentIndex - 1 + window.sectionsData.length) % window.sectionsData.length;
+            newIndex = (currentIndex - 1 + sectionsData.length) % sectionsData.length;
         } else {
             return;
         }
-        setActiveSectionId(window.sectionsData[newIndex].id);
+        setActiveSectionId(sectionsData[newIndex].id);
     }
 
     const goToNextPage = () => goToAdjacentPage('next');
@@ -156,7 +162,7 @@ window.App = () => {
         }
         setFullscreenContent(overlayNone);
     };
-    const activeSection = window.sectionsData.find(section => section.id === activeSectionId);
+    const activeSection = sectionsData.find(section => section.id === activeSectionId);
 
     const updatePageButtonPrez = (sectionId) => {
         const isAllPages = sectionId === 'all_pages' && activeSectionId === 'all_pages';
@@ -171,10 +177,10 @@ window.App = () => {
         <div className="flex flex-col flex-row h-screen bg-gray-50 text-gray-900">
             <div id="content" className="flex-1 p-2 md:p-8 md:pr-34 overflow-y-auto main-content-scrollable ">
                 <h1 className="text-4xl font-extrabold text-center text-blue-800 mb-10 pb-4 border-b-4 border-blue-300">
-                    {window.appTitle}
+                    {appTitle}
                 </h1>
                 {activeSectionId === 'all_pages' ? (
-                    window.sectionsData.map((section) => (
+                    sectionsData.map((section) => (
                         <SectionPage key={section.id} section={section} onParagraphClick={handleParagraphClick} />
                     ))
                 ) : (
@@ -195,7 +201,7 @@ window.App = () => {
                 </button>
                 <nav id="page_buttons" ref={navListRef} className="hidden md:block flex-1 m-2 my-4 overflow-y-auto pt-2 bg-blue-700 rounded-md">
                     <ul className="space-y-0">
-                        {window.sectionsData.map((section) => (
+                        {sectionsData.map((section) => (
                             <li key={section.id}>
                                 <button
                                     onClick={() => handleSetActiveSectionId(section.id)}
