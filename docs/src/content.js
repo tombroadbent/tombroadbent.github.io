@@ -13,7 +13,7 @@ window.__content = () => ({
                 { type: 'subheader', text: 'Content Interaction' },
 
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**Tap to Expand Text & Images:** Tap on most **paragraphs** to see them in a larger, easier-to-read font. Tapping on an **image** will also open a full-screen version.',
                         '**Long Press for Scripture References:** Scripture reference like John 3:16 support **long-press** to open the passage directly in the Church Library app.',
@@ -21,7 +21,7 @@ window.__content = () => ({
                 },
                 { type: 'subheader', text: 'Section Navigation' },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**Left/Right:** Use the **left and right arrow buttons** to move between primary sections.',
                         '**Up/Down:** Use the **up and down arrow buttons** to navigate subsections within a primary section.',
@@ -35,7 +35,7 @@ window.__content = () => ({
                     text: 'The app works best in full-screen mode. To enable full-screen (i.e. hide the toolbar) on iOS Safari:',
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         'Tap the **aA button** in the address bar or the **Reader View button** (three lines).',
                         'Select "**Hide Toolbar**" from the menu (may be under "..." button).',
@@ -45,7 +45,7 @@ window.__content = () => ({
                 },
                 { type: 'subheader', text: 'Mobile & Tablet' },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**iPad "Slide Over":** The **< > button** (top) creates space for the "Slide Over" feature, allowing the Library app to work side-by-side with this content.',
                         '**Hidden Shortcuts on Mobile:** On smaller screens, section shortcuts are hidden to maximize content.'
@@ -122,7 +122,7 @@ window.__content = () => ({
                     text: 'This is an example of a list with a hanging indent style, suitable for bullet points or enumerations where the first line of each item aligns differently from subsequent lines.',
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**First Item:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.',
                         '**Second Item:** Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.',
@@ -218,7 +218,7 @@ window.__content = () => ({
                 },
                 { type: 'subheader', text: 'Key Learnings from Content Integration' },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**Enhanced Engagement:** Mixing formats keeps readers interested and caters to different learning styles.',
                         '**Improved Comprehension:** Complex ideas can be broken down and presented in more digestible ways.',

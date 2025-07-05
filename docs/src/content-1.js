@@ -32,7 +32,7 @@ window.__content = () => ({
                     text: 'Context Summary'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**Ezra Booth** — a former Methodist minister baptized after witnessing a healing (Elsa Johnson) by Joseph Smith. He was called to missionary service in D&C 52.',
                         '**Symonds Ryder** — a former Campbellite preacher converted after a local prophecy (earthquake, no JSP source) was fulfilled. He was also called in D&C 52 (though his name was misspelled in the revelation).',
@@ -52,7 +52,7 @@ window.__content = () => ({
                     text: 'Terse Conclusions'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         'Booth’s criticisms quickly lost traction; he ceased publishing and withdrew from religious life.',
                         'Ryder never returned to the Church and later participated in the mob that attacked Joseph and Sidney in Hiram.',
@@ -121,7 +121,7 @@ window.__content = () => ({
                     text: 'What to proclaim:'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**"My gospel"** — the core message of Jesus Christ and His atonement',
                         '**"The things of the kingdom"** — principles and purposes of God’s eternal plan',
@@ -133,7 +133,7 @@ window.__content = () => ({
                     text: 'How to proclaim it:'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**Open your mouths** — "it is necessary...that you should open your mouths" (D&C 71:1)',
                         '**For a season** — "this is a mission for a season" (D&C 71:3)',
@@ -148,7 +148,7 @@ window.__content = () => ({
                     text: 'Promised outcomes:'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**Enemies will not succeed** — "no weapon that is formed against you shall prosper" (D&C 71:9)',
                         '**Critics will be confounded** — "he shall be confounded in mine own due time" (D&C 71:10)'
@@ -261,7 +261,7 @@ window.__content = () => ({
                     text: 'Is Wisdom Secular or Spiritual?'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**Secular wisdom** is based on reason, experience, and common sense. It helps in making practical and ethical decisions in daily life.',
                         '**Spiritual wisdom** is revealed by God and aligned with eternal truth. It leads to righteous living, spiritual growth, and peace.'
@@ -276,7 +276,7 @@ window.__content = () => ({
                     text: 'The Path from Data to Wisdom & Power'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**Data**: Unprocessed details or observations, often without context or meaning.',
                         '**Information**: Organized data that reveals patterns or relationships and begins to convey basic facts.',
@@ -363,7 +363,7 @@ window.__content = () => ({
                     text: 'Verse 3: "...to render an account of his stewardship, both in time and in eternity."'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         '**“in time”** = during mortality',
                         '**“in eternity”** = after this life'
@@ -466,7 +466,7 @@ window.__content = () => ({
                     ]
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         'Act without delay — be diligent and active.',
                         'Speak boldly — "lift up your voices as with the sound of a trump."',
@@ -496,7 +496,7 @@ window.__content = () => ({
                     ]
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         'Pray for guidance from the Holy Ghost, who teaches all things.',
                         'Accept chastening and correction (as with William E. McLellin) as part of spiritual refinement.',
@@ -509,7 +509,7 @@ window.__content = () => ({
                     text: 'Assignment by Revelation and Partnership (D&C 75:13–22)'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         'Missionary companionships were assigned by name, showing the Lord\'s personal direction.',
                         'They were sent to various geographic areas, demonstrating the importance of spreading the gospel widely.',
@@ -524,7 +524,7 @@ window.__content = () => ({
                     text: 'Additional Directives and Support (D&C 75:23–36)'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         'Those who volunteered to serve were further instructed (D&C 75:23).',
                         'The Church was commanded to support missionary families (D&C 75:24–25).',
@@ -538,7 +538,7 @@ window.__content = () => ({
                     text: 'Summary: Key Missionary Principles in D&C 75'
                 },
                 {
-                    type: 'list-item-hanging-indent',
+                    type: 'list',
                     items: [
                         'Diligence, not delay',
                         'Proclaim revealed truth boldly',

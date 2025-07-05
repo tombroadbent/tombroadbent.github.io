@@ -35,7 +35,7 @@ window.SectionPage = ({ section, onParagraphClick }) => {
                             {window.parseScriptureLinks(block.text)}
                         </h4>
                     )}
-                    {(block.type === 'list' || block.type === 'list-item-hanging-indent') && (
+                    {block.type === 'list' && (
                         <ul className="list-none text-gray-700">
                             {block.items.map((item, itemIndex) => (
                                 <li
