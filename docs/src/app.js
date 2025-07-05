@@ -8,6 +8,23 @@ window.App = () => {
     const navListRef = React.useRef(null);
     const [allPageSavedScrollOffset, setAllPageSavedScrollOffset] = React.useState(0);
 
+    const defaultContentFile = 'src/content-1.js';
+    const defaultSectionIndex = 3;
+    React.useEffect(() => {
+        (async () => {
+            try {
+                const { appTitle, sectionsData } = await window.loadContentFile(defaultContentFile);
+                setAppTitle(appTitle);
+                setSectionsData(sectionsData);
+                if (sectionsData.length > defaultSectionIndex) {
+                    setActiveSectionId(sectionsData[defaultSectionIndex].id);
+                }
+            } catch (err) {
+                console.error('Failed to load default content:', err);
+            }
+        })();
+    }, []);
+
     React.useEffect(() => {
         const mainContent = document.querySelector('#content');
         if (mainContent) {
