@@ -62,7 +62,7 @@ window.SectionPage = ({ section, onParagraphClick }) => {
                             )}
                         </div>
                     )}
-                    {block.type === 'question-frame' && (
+                    {block.type === 'question' && (
                         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg my-4 shadow-sm">
                             {block.questions.map((question, qIndex) => (
                                 <p
@@ -75,7 +75,7 @@ window.SectionPage = ({ section, onParagraphClick }) => {
                             ))}
                         </div>
                     )}
-                    {block.type === 'quote-frame' && (
+                    {block.type === 'quote' && (
                         <div
                             className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-lg my-4 shadow-sm"
                             onClick={() => onParagraphClick({ type: 'text', content: block.text })}
@@ -83,7 +83,7 @@ window.SectionPage = ({ section, onParagraphClick }) => {
                             <p className="text-lg text-gray-800 italic leading-relaxed">{window.parseScriptureLinks(block.text)}</p>
                         </div>
                     )}
-                    {block.type === 'scripture-citation-blocks' && (
+                    {block.type === 'scripture' && (
                         <div className="my-4">
                             {block.items.map((item, itemIndex) => (
                                 <div key={itemIndex} className="mb-4">

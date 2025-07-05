@@ -85,7 +85,7 @@ window.__content = () => ({
                     text: 'Here we see an example of a quote formatted for emphasis. This type is ideal for direct citations from sources, speeches, or scriptures.',
                 },
                 {
-                    type: 'quote-frame',
+                    type: 'quote',
                     text: '“This is a quote demonstration how quotes are formatted. Lorem ipsum dolor sit amet, consectetur adipiscing elit.” — Someone Important',
                 },
                 {
@@ -98,7 +98,7 @@ window.__content = () => ({
                     text: 'The question frame is designed to prompt discussion or introspection. It can contain one or more questions related to the preceding content.',
                 },
                 {
-                    type: 'question-frame',
+                    type: 'question',
                     questions: [
                         'How does this quote make you feel about the topic?',
                         'What are some ways you might apply this principle in your life?',
@@ -159,7 +159,7 @@ window.__content = () => ({
                     text: 'This section showcases the scripture citation block, ideal for presenting scriptural passages with accompanying contextual information. Only New Testament scriptures are used here as per the request.',
                 },
                 {
-                    type: 'scripture-citation-blocks',
+                    type: 'scripture',
                     items: [
                         {
                             context: 'Context for Matthew 5:14–16: Jesus delivered the Sermon on the Mount, teaching His disciples about their role as the "light of the world." He emphasized that their good works should be visible to others, not to boast, but to glorify God.',
@@ -206,11 +206,11 @@ window.__content = () => ({
                     text: 'This section combines various content types to illustrate how they can be used together to create rich and engaging material. We\'ll start with a general introduction, followed by a relevant quote, a thought-provoking question, a list of key points, and a scripture passage with context.',
                 },
                 {
-                    type: 'quote-frame',
+                    type: 'quote',
                     text: '“The strength of a community lies in its diversity of thought and expression. Embrace the full spectrum of possibilities.” — A Thought Leader',
                 },
                 {
-                    type: 'question-frame',
+                    type: 'question',
                     questions: [
                         'How does the combination of different content elements enhance understanding?',
                         'What are the advantages of presenting information in varied formats?',
@@ -232,7 +232,7 @@ window.__content = () => ({
                     text: 'Just as various content types contribute to a cohesive whole, so too does unity among individuals lead to greater strength, as taught in the New Testament.',
                 },
                 {
-                    type: 'scripture-citation-blocks',
+                    type: 'scripture',
                     items: [
                         {
                             context: 'Context for 1 Corinthians 12:12-14: Paul uses the analogy of the human body to explain the unity and diversity within the Christian community, emphasizing that each member, though different, is vital to the functioning of the whole.',
