@@ -163,27 +163,32 @@ window.sectionsData = [
                     {
                         context: 'Context for Matthew 5:14–16: Jesus delivered the Sermon on the Mount, teaching His disciples about their role as the "light of the world." He emphasized that their good works should be visible to others, not to boast, but to glorify God.',
                         scripture: 'Matthew 5:14–16',
-                        citation: 'Ye are the light of the world. A city that is set on an hill cannot be hid. Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house. Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.'
+                        citation: 'Ye are the light of the world. A city that is set on an hill cannot be hid. Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house. Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.',
+                        meaning: 'Let your good deeds be visible to inspire and honor God.'
                     },
                     {
                         context: 'Context for John 3:16: This well-known verse encapsulates the essence of God\'s love and the plan of salvation, highlighting His willingness to give His only begotten Son for the redemption of humanity.',
                         scripture: 'John 3:16',
-                        citation: 'For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.'
+                        citation: 'For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.',
+                        meaning: 'God offers eternal life to all who believe in Jesus.'
                     },
                     {
                         context: 'Context for Romans 8:28: Paul wrote to the Saints in Rome, offering reassurance that for those who love God and are called according to His purpose, all things, even challenges and adversities, can work together for their good.',
                         scripture: 'Romans 8:28',
-                        citation: 'And we know that all things work together for good to them that love God, to them who are the called according to his purpose.'
+                        citation: 'And we know that all things work together for good to them that love God, to them who are the called according to his purpose.',
+                        meaning: 'God brings good from all circumstances for those who love Him.'
                     },
                     {
                         context: 'Context for Philippians 4:13: Paul, while imprisoned, taught the Philippians about the source of his strength and contentment, regardless of his circumstances. He emphasized that he could do all things through Christ who strengthened him.',
                         scripture: 'Philippians 4:13',
-                        citation: 'I can do all things through Christ which strengtheneth me.'
+                        citation: 'I can do all things through Christ which strengtheneth me.',
+                        meaning: 'Christ empowers us to overcome any challenge.'
                     },
                     {
                         context: 'Context for James 1:5: James, the brother of the Lord, encouraged believers to seek wisdom from God with faith, promising that it would be given generously to those who ask without doubting.',
                         scripture: 'James 1:5',
-                        citation: 'If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.'
+                        citation: 'If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.',
+                        meaning: 'Ask God for wisdom and He will give it generously.'
                     }
                 ]
             },
