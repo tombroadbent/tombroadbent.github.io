@@ -162,6 +162,18 @@ window.App = () => {
         }
         setFullscreenContent(overlayNone);
     };
+    const handleOpenChooser = () => {
+        const chooserContainer = document.querySelector('#chooser-container');
+        if (chooserContainer) {
+            chooserContainer.classList.remove('hidden');
+        }
+    };
+    const handleCloseChooser = () => {
+        const chooserContainer = document.querySelector('#chooser-container');
+        if (chooserContainer) {
+            chooserContainer.classList.add('hidden');
+        }
+    };
     const activeSection = sectionsData.find(section => section.id === activeSectionId);
 
     const updatePageButtonPrez = (sectionId) => {
@@ -176,7 +188,10 @@ window.App = () => {
     return (
         <div className="flex flex-col flex-row h-screen bg-gray-50 text-gray-900">
             <div id="content" className="flex-1 p-2 md:p-8 md:pr-34 overflow-y-auto main-content-scrollable ">
-                <h1 className="text-4xl font-extrabold text-center text-blue-800 mb-10 pb-4 border-b-4 border-blue-300">
+                <h1
+                    onClick={handleOpenChooser}
+                    className="cursor-pointer hover:text-blue-600 transition-colors duration-200 text-4xl font-extrabold text-center text-blue-800 mb-10 pb-4 border-b-4 border-blue-300"
+                >
                     {appTitle}
                 </h1>
                 {activeSectionId === 'all_pages' ? (
@@ -275,6 +290,12 @@ window.App = () => {
                     </svg>
                 </button>
             </div>
+
+            <ContentSwitcherOverlay 
+                setAppTitle={setAppTitle}
+                setSectionsData={setSectionsData}
+                setActiveSectionId={setActiveSectionId} 
+                onSelect={handleCloseChooser} />
 
             <FullscreenOverlay content={fullscreenContent} onClose={handleCloseFullscreen} />
         </div>
