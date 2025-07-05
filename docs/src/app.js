@@ -1,7 +1,5 @@
 
 window.App = () => {
-    window.appTitle = window.appTitle || 'Choose Content';
-    window.sectionsData = window.sectionsData || [];
     const [appTitle, setAppTitle] = React.useState('Choose Content');
     const [sectionsData, setSectionsData] = React.useState([]);
     const [activeSectionId, setActiveSectionId] = React.useState(() => {
