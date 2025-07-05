@@ -98,6 +98,15 @@ window.SectionPage = ({ section, onParagraphClick }) => {
                             ))}
                         </div>
                     )}
+                    {block.type === 'table' && (
+                        <div className="overflow-x-auto my-4">
+                            <window.Table
+                                headers={block.headers}
+                                rows={block.rows}
+                                onParagraphClick={onParagraphClick}
+                            />
+                        </div>
+                    )}
                 </div>
             ))}
         </div>
