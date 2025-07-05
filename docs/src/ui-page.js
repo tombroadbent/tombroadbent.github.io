@@ -90,6 +90,7 @@ window.SectionPage = ({ section, onParagraphClick }) => {
                                     <window.ScriptureBlock
                                         scripture={item.scripture}
                                         citation={item.citation}
+                                        meaning={item.meaning}
                                         context={item.context}
                                         onParagraphClick={onParagraphClick}
                                     />
