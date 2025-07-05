@@ -17,7 +17,7 @@ window.ContentSwitcherOverlay = ({ setAppTitle, setSectionsData, setActiveSectio
           const { appTitle, sectionsData } = window.__content();
           resolve({ appTitle, sectionsData });
         } catch (err) {
-          reject(new Error('Content script did not provide __loadContent()'));
+          reject(new Error('Content script did not provide __content()'));
         }
       };
       script.onerror = () => reject(new Error(`Failed to load ${src}`));
