@@ -1,4 +1,3 @@
-
 function parseScripturesForReact(text) {
     const { replacements } = window.extractScriptureReferences(text);
 
@@ -54,8 +53,8 @@ function parseStringForMarkdown(text, baseKey = 0) {
         return [];
     }
 
-    // Regex to match **strong**, __strong__, *em*, and \n.
-    const markdownRegex = /\*\*([\s\S]+?)\*\*|__([\s\S]+?)__|\*([\s\S]+?)\*|\n/g;
+    // Regex to match **strong**, __strong__, *em*, _em_, and \n.
+    const markdownRegex = /\*\*([\s\S]+?)\*\*|__([\s\S]+?)__|\*([\s\S]+?)\*|_([\s\S]+?)_|\n/g;
     const parts = [];
     let lastIndex = 0;
     let match;
@@ -66,15 +65,17 @@ function parseStringForMarkdown(text, baseKey = 0) {
             parts.push(text.substring(lastIndex, match.index));
         }
 
-        const [fullMatch, strongDouble, strongUnderscore, em] = match;
+        const [fullMatch, asteriskBold, underscoreBold, asteriskItalics, underscoreItalics] = match;
         const key = `${baseKey}-${lastIndex}`;
 
-        if (strongDouble) {
-            parts.push(React.createElement('strong', { key }, strongDouble));
-        } else if (strongUnderscore) {
-            parts.push(React.createElement('strong', { key }, strongUnderscore));
-        } else if (em) {
-            parts.push(React.createElement('em', { key }, em));
+        if (asteriskBold) {
+            parts.push(React.createElement('strong', { key }, asteriskBold));
+        } else if (underscoreBold) {
+            parts.push(React.createElement('strong', { key }, underscoreBold));
+        } else if (asteriskItalics) {
+            parts.push(React.createElement('em', { key }, asteriskItalics));
+        } else if (underscoreItalics) {
+            parts.push(React.createElement('em', { key }, underscoreItalics));
         } else if (fullMatch === '\n') {
             parts.push(React.createElement('br', { key }));
         }
