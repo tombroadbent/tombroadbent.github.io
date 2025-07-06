@@ -184,7 +184,7 @@ window.__content = () => ({
                         },
                         {
                             scripture: 'Matthew 26:59–64',
-                            citation: 'But Jesus heald his peace...Hereafter shall ye see the Son of man sitting on the right hand of power.',
+                            citation: 'But Jesus held his peace...Hereafter shall ye see the Son of man sitting on the right hand of power.',
                             meaning: 'Jesus boldly proclaims His divine identity and foretells His exaltation despite the threat of condemnation.',
                             context: 'Jesus is illegally tried at night by the high priest and council, who seek false witness to justify their plot to execute Him.'
                         },
