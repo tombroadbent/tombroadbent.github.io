@@ -9,7 +9,7 @@ window.App = () => {
     const [allPageSavedScrollOffset, setAllPageSavedScrollOffset] = React.useState(0);
 
     const defaultContentFile = 'src/content-1.js';
-    const defaultSectionIndex = 3;
+    const defaultSectionIndex = 0;
     React.useEffect(() => {
         (async () => {
             try {
