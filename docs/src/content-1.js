@@ -661,6 +661,46 @@ window.__content = () => ({
                     text: 'These principles can guide modern missionary efforts — both formal and informal — with faith, structure, and divine support.'
                 }
             ]
+        },
+        {
+            id: 'false_prophet_encounter',
+            title: 'Joseph Smith’s Bold Declaration to a False Prophet',
+            navTitle: 'Devil',
+            content: [
+                {
+                    type: 'subheader',
+                    text: 'Context and Participants'
+                },
+                {
+                    type: 'paragraph',
+                    text: 'In November 1835, Joseph Smith had an extended theological discussion with Robert Matthews, a religious wanderer who styled himself “Joshua the Jewish Minister.” Matthews was more infamously known as “Prophet Matthias” from New York, a man recently embroiled in scandal and trial (rsc.byu.edu). Joseph invited Matthews to stay in Kirtland, Ohio, and over two days the Prophet engaged him in gospel conversation, listening carefully to Matthews’s unusual beliefs.'
+                },
+                {
+                    type: 'subheader',
+                    text: 'Theological Dispute'
+                },
+                {
+                    type: 'paragraph',
+                    text: 'The discussion grew contentious as Matthews espoused heterodox theology, including a claim that the spirit of the Apostle Matthias was reincarnated in him and even that he possessed “the soul of Christ.” He taught a form of transmigration of souls (reincarnation) as the path to eternal life (gutenberg.org). Joseph Smith grew concerned at these doctrines. Rather than accepting Matthews’s claims, Joseph discerned a sinister source behind them. On the morning of November 11, 1835 – after having heard Matthews out and likely seeking confirmation through prayer – Joseph acted decisively.'
+                },
+                {
+                    type: 'subheader',
+                    text: '“My God Told Me That Your God Is the Devil.”'
+                },
+                {
+                    type: 'paragraph',
+                    text: 'Confronting Robert Matthews directly, Joseph Smith declared that the teachings were of the devil. He recounted, “I told him that his doctrine was of the Devil, that he was in reality in possession of a wicked and depraved spirit, although he professed to be the spirit of truth” (gutenberg.org). Joseph then announced the startling revelation he’d received: “My God told me that his god was the devil.” He informed Matthews that he could no longer remain in his house. “I could not keep him any longer, and he must depart,” Joseph recorded in his journal (gutenberg.org). By dismissing Matthews, Joseph effectively “cast out the devil in bodily shape” – Matthews being forced to leave under that rebuke (gutenberg.org).'
+                },
+                {
+                    type: 'subheader',
+                    text: 'Sources and Documentation'
+                },
+                {
+                    type: 'paragraph',
+                    text: 'This dramatic encounter is well documented in multiple sources: Joseph Smith, _History of the Church_, vol. 2, pp. 304–307 (Nov. 9–11, 1835) (gutenberg.org); Scott H. Faulring, ed., _An American Prophet’s Record: The Diaries and Journals of Joseph Smith_ (Joseph’s 1835–36 journal, Nov. 1835 entry); and the Church’s official Joseph Smith Papers site (Journal, 1835–1836). It is also cited in BYU Religious Studies Center’s article _Joseph Smith: Prophet, Seer, and Revelator_ (rsc.byu.edu).'
+                }
+            ]
         }
+
     ]
 });
