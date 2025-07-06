@@ -25,7 +25,7 @@ window.__content = () => ({
         {
             id: 'booth_and_ryder',
             title: 'Booth & Ryder',
-            navTitle: 'Booth & Ryder',
+            navTitle: 'B&R',
             content: [
                 {
                     type: 'subheader',
@@ -339,7 +339,6 @@ window.__content = () => ({
                     ]
                 }
             ]
-
         },
         {
             id: 'absence_of_comma_dc72_4',
@@ -436,6 +435,111 @@ window.__content = () => ({
                 {
                     type: 'quote',
                     text: 'Bishops, we express our deep gratitude to you. Dear bishops, please know how much we love and appreciate you. Your contribution to the kingdom is almost beyond description. We honor each of you. — Elder Quentin L. Cook (Apr 2021)'
+                }
+            ]
+        },
+        {
+            id: 'opportunity_to_share_dc73',
+            title: 'I Have Many Opportunities to Share the Savior’s Gospel',
+            navTitle: 'Share',
+            content: [
+                {
+                    type: 'paragraph',
+                    text: 'When Joseph Smith and Sidney Rigdon returned from their missionary assignment (see Doctrine and Covenants 71), the Lord told them to continue translating the Bible (see Guide to the Scriptures, “Joseph Smith Translation (JST),” Gospel Library). But this did not mean He wanted them to stop sharing the gospel. After all, sharing the gospel is part of the life of a disciple.'
+                },
+                {
+                    type: 'scripture',
+                    items: [
+                        {
+                            scripture: 'D&C 73:4',
+                            citation: 'And, inasmuch as it is practicable, to preach in the regions round about until conference; and after that it is expedient to continue the work of translation until it be finished.',
+                            meaning: '',
+                            context: ''
+                        }
+                    ]
+                },
+                {
+                    type: 'subheader',
+                    text: 'Definition of practicable'
+                },
+                {
+                    type: 'quote',
+                    text: 'Practicable (adjective): Capable of being done or put into practice successfully; feasible.'
+                },
+                {
+                    type: 'list',
+                    items: [
+                        'Not just theoretical — it implies something that can realistically be carried out.',
+                        'Often used when considering conditions or limitations (e.g., time, resources, or obligations).'
+                    ]
+                },
+                {
+                    type: 'question',
+                    questions: [
+                        'How can I make sharing the gospel an ongoing, “practicable” (D&C 73:4)—or realistic—part of my life among my other responsibilities?'
+                    ]
+                },
+                {
+                    type: 'quote',
+                    text: 'Now I give no more unto you at this time. Gird up your loins and be sober. (D&C 73:6)'
+                },
+                {
+                    type: 'subheader',
+                    text: 'Definition of Gird up your loins'
+                },
+                {
+                    type: 'list',
+                    items: [
+                        'In biblical times, people wore long robes. To move quickly or work, they would tie up their robes with a belt—a practical action to prepare for movement or battle.',
+                        'Spiritually, it means:',
+                        'Prepare yourself',
+                        'Be ready for action',
+                        'Commit fully to your duty',
+                        'Often paired with calls to spiritual discipline, mental focus, and courage (see 1 Peter 1:13).'
+                    ]
+                },
+                {
+                    type: 'subheader',
+                    text: '"Labor with Your Might ... Proclaiming the Truth"'
+                },
+                {
+                    type: 'paragraph',
+                    text: 'Doctrine and Covenants 75:1–16 — This revelation was given to those who had "given [their] names to go forth to proclaim [the Savior’s] gospel" (D&C 75:2).'
+                },
+                {
+                    type: 'list',
+                    items: [
+                        'How to Share the Gospel Effectively — What principles or methods does the Lord give?',
+                        'How the Lord Blesses and Supports Us — What promises or help does He offer?'
+                    ]
+                },
+                {
+                    type: 'question',
+                    questions: [
+                        'What does it mean to “tarry” or “be idle” in sharing the gospel?',
+                        'What does it look like to “labor with your might”? (D&C 75:3)'
+                    ]
+                },
+                {
+                    type: 'scripture',
+                    items: [
+                        {
+                            scripture: 'D&C 75:3',
+                            citation: 'Behold, I say unto you that it is my will that you should go forth and not tarry, neither be idle but labor with your might.',
+                            meaning: '',
+                            context: ''
+                        },
+                        {
+                            scripture: 'D&C 75:29',
+                            citation: 'Let every man be diligent in all things. And the idler shall not have place in the church, except he repent and mend his ways.',
+                            meaning: '',
+                            context: ''
+                        }
+                    ]
+                },
+                {
+                    type: 'paragraph',
+                    text: 'The Lord gave a clear call to action: go forth, don\'t delay, labor diligently. Whether serving as a full-time missionary or not, the Lord expects diligence, focus, and effort from every disciple. Idleness in the work of the gospel is discouraged; repentance and renewed commitment are always available.'
                 }
             ]
         },
