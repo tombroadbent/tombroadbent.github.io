@@ -1,4 +1,3 @@
-
 window.SectionPage = ({ section, onParagraphClick }) => {
     const titleMatch = section.title.match(/^(.*?)\s*(\(D&C\s+.*?\))?$/);
     const mainTitle = titleMatch ? titleMatch[1].trim() : section.title;
@@ -85,17 +84,10 @@ window.SectionPage = ({ section, onParagraphClick }) => {
                     )}
                     {block.type === 'scripture' && (
                         <div className="my-4">
-                            {block.items.map((item, itemIndex) => (
-                                <div key={itemIndex} className="mb-4">
-                                    <window.ScriptureBlock
-                                        scripture={item.scripture}
-                                        citation={item.citation}
-                                        meaning={item.meaning}
-                                        context={item.context}
-                                        onParagraphClick={onParagraphClick}
-                                    />
-                                </div>
-                            ))}
+                            <window.ScriptureBlock
+                                items={block.items}
+                                onParagraphClick={onParagraphClick}
+                            />
                         </div>
                     )}
                     {block.type === 'table' && (
@@ -112,4 +104,3 @@ window.SectionPage = ({ section, onParagraphClick }) => {
         </div>
     );
 };
-
