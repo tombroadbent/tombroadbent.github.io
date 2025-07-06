@@ -40,8 +40,15 @@ window.__content = () => ({
                     ]
                 },
                 {
-                    type: 'quote',
-                    text: '"Wherefore, confound your enemies; call upon them to meet you both in public and in private; and inasmuch as ye are faithful their shame shall be made manifest." (D&C 71:7)'
+                    type: 'scripture',
+                    items: [
+                        {
+                            scripture: 'D&C 71:7',
+                            citation: 'Wherefore, confound your enemies; call upon them to meet you both in public and in private; and inasmuch as ye are faithful their shame shall be made manifest.',
+                            meaning: '',
+                            context: ''
+                        }
+                    ]
                 },
                 {
                     type: 'paragraph',
@@ -113,8 +120,15 @@ window.__content = () => ({
                     text: 'Charge to Preach (D&C 71:1)'
                 },
                 {
-                    type: 'quote',
-                    text: '"[Proclaim] my gospel, the things of the kingdom, expounding the mysteries thereof out of the scriptures, according to that portion of Spirit and power which shall be given unto you, even as I will." (D&C 71:1)'
+                    type: 'scripture',
+                    items: [
+                        {
+                            scripture: 'D&C 71:1',
+                            citation: '[Proclaim] my gospel, the things of the kingdom, expounding the mysteries thereof out of the scriptures, according to that portion of Spirit and power which shall be given unto you, even as I will.',
+                            meaning: '',
+                            context: ''
+                        }
+                    ]
                 },
                 {
                     type: 'subheader',
@@ -212,19 +226,27 @@ window.__content = () => ({
                 },
                 {
                     type: 'quote',
-                    text: 'As followers of Christ we should live peacefully with others who do not share our values or accept the teachings upon which they are based. — President Dallin H. Oaks (Oct 2014)'
+                    text: 'As followers of Christ we should live peacefully with others who do not share our values or accept the teachings upon which they are based.\n— President Dallin H. Oaks (Oct 2014)'
                 },
                 {
                     type: 'quote',
-                    text: 'Followers of Christ should be examples of civility. We should love all people, be good listeners, and show concern for their sincere beliefs. Though we may disagree, we should not be disagreeable. — President Dallin H. Oaks (Oct 2014)'
+                    text: 'Followers of Christ should be examples of civility. We should love all people, be good listeners, and show concern for their sincere beliefs. Though we may disagree, we should not be disagreeable.\n— President Dallin H. Oaks (Oct 2014)'
                 },
                 {
                     type: 'quote',
-                    text: 'This is for my "Bible verses that prove you\'re wrong" list. — Sister Natalie Broadbent'
+                    text: 'One of the great challenges in life is knowing enough to think you\'re right but not enough to know you\'re wrong.\n― Neil deGrasse Tyson'
                 },
                 {
                     type: 'quote',
-                    text: 'Do you even read the Bible? It\'s all in there! — Sister Haley Broadbent'
+                    text: 'The good thing about science is that it\'s true whether or not you believe in it.\n― Neil deGrasse Tyson'
+                },
+                {
+                    type: 'quote',
+                    text: 'This is for my "Bible verses that prove you\'re wrong" list.\n— Sister Natalie Broadbent'
+                },
+                {
+                    type: 'quote',
+                    text: 'Do you even read the Bible? It\'s all in there!\n— Sister Haley Broadbent'
                 }
             ]
         },
@@ -346,8 +368,15 @@ window.__content = () => ({
             navTitle: 'Time',
             content: [
                 {
-                    type: 'quote',
-                    text: '"And verily in this thing ye have done wisely, for it is required of the Lord, at the hand of every steward, to render an account of his stewardship, both in time and in eternity. For he who is faithful and wise in time is accounted worthy to inherit the mansions prepared for him of my Father." (D&C 72:3–4)'
+                    type: 'scripture',
+                    items: [
+                        {
+                            scripture: 'D&C 72:3–4',
+                            citation: 'And verily in this thing ye have done wisely, for it is required of the Lord, at the hand of every steward, to render an account of his stewardship, both in time and in eternity. For he who is faithful and wise in time is accounted worthy to inherit the mansions prepared for him of my Father.',
+                            meaning: '',
+                            context: ''
+                        }
+                    ]
                 },
                 {
                     type: 'paragraph',
@@ -358,8 +387,15 @@ window.__content = () => ({
                     text: 'Verse Comparison'
                 },
                 {
-                    type: 'quote',
-                    text: 'Verse 3: "...to render an account of his stewardship, both in time and in eternity."'
+                    type: 'scripture',
+                    items: [
+                        {
+                            scripture: 'D&C 72:3',
+                            citation: '...to render an account of his stewardship, both in time and in eternity.',
+                            meaning: '',
+                            context: ''
+                        }
+                    ]
                 },
                 {
                     type: 'list',
@@ -373,8 +409,15 @@ window.__content = () => ({
                     text: 'The structure emphasizes stewardship accountability in both realms.'
                 },
                 {
-                    type: 'quote',
-                    text: 'Verse 4: "For he who is faithful and wise in time is accounted worthy to inherit the mansions prepared for him of my Father."'
+                    type: 'scripture',
+                    items: [
+                        {
+                            scripture: 'D&C 72:4',
+                            citation: 'For he who is faithful and wise in time is accounted worthy to inherit the mansions prepared for him of my Father.',
+                            meaning: '',
+                            context: ''
+                        }
+                    ]
                 },
                 {
                     type: 'paragraph',
@@ -422,19 +465,19 @@ window.__content = () => ({
                 },
                 {
                     type: 'quote',
-                    text: 'The bishop has a paramount role in serving as a shepherd to guide the rising generation, including young single adults, to Jesus Christ. President Russell M. Nelson has emphasized ... that [a Bishop\'s] “first and foremost responsibility is to care for the young men and young women of [the] ward.” The bishopric supports parents in watching over and nurturing children and youth in the ward. The bishop and ward Young Women president counsel together. They strive to help the youth live the standards in For the Strength of Youth, qualify to receive ordinances, and make and keep sacred covenants. — Elder Quentin L. Cook (Apr 2021)'
+                    text: 'The bishop has a paramount role in serving as a shepherd to guide the rising generation, including young single adults, to Jesus Christ. President Russell M. Nelson has emphasized ... that [a Bishop\'s] “first and foremost responsibility is to care for the young men and young women of [the] ward.” The bishopric supports parents in watching over and nurturing children and youth in the ward. The bishop and ward Young Women president counsel together. They strive to help the youth live the standards in For the Strength of Youth, qualify to receive ordinances, and make and keep sacred covenants.\n— Elder Quentin L. Cook (Apr 2021)'
                 },
                 {
                     type: 'quote',
-                    text: 'You might ask, “Why is the bishop directed to spend so much time with the youth?” The Lord has organized His Church to accomplish crucial priorities. The young men who are priests and the young women of the same age are at a very important stage in their lives and development. During a short period of time, they make decisions that have significant lifelong implications. They determine whether they will qualify for the temple, serve a mission, strive to be married in the temple, and prepare for their life’s work. These decisions, once made, have profound spiritual and practical implications for the remainder of their lives. — Elder Quentin L. Cook (Apr 2021)'
+                    text: 'You might ask, “Why is the bishop directed to spend so much time with the youth?” The Lord has organized His Church to accomplish crucial priorities. The young men who are priests and the young women of the same age are at a very important stage in their lives and development. During a short period of time, they make decisions that have significant lifelong implications. They determine whether they will qualify for the temple, serve a mission, strive to be married in the temple, and prepare for their life’s work. These decisions, once made, have profound spiritual and practical implications for the remainder of their lives.\n— Elder Quentin L. Cook (Apr 2021)'
                 },
                 {
                     type: 'quote',
-                    text: 'In order to spend more time with youth, wherever they are, including at school events or activities, bishoprics have been counseled to delegate appropriate meetings and counseling time with adults. While bishops can counsel on urgent matters, we recommend that delegation of ongoing counseling with chronic, less urgent matters that do not involve judgments as to worthiness be assigned to members of the elders quorum or Relief Society. The Spirit will guide the leaders to select the right members to undertake this counseling. Those who receive this delegated counseling assignment are entitled to revelation. They, of course, must always maintain strict confidentiality. — Elder Quentin L. Cook (Apr 2021)'
+                    text: 'In order to spend more time with youth, wherever they are, including at school events or activities, bishoprics have been counseled to delegate appropriate meetings and counseling time with adults. While bishops can counsel on urgent matters, we recommend that delegation of ongoing counseling with chronic, less urgent matters that do not involve judgments as to worthiness be assigned to members of the elders quorum or Relief Society. The Spirit will guide the leaders to select the right members to undertake this counseling. Those who receive this delegated counseling assignment are entitled to revelation. They, of course, must always maintain strict confidentiality.\n— Elder Quentin L. Cook (Apr 2021)'
                 },
                 {
                     type: 'quote',
-                    text: 'Bishops, we express our deep gratitude to you. Dear bishops, please know how much we love and appreciate you. Your contribution to the kingdom is almost beyond description. We honor each of you. — Elder Quentin L. Cook (Apr 2021)'
+                    text: 'Bishops, we express our deep gratitude to you. Dear bishops, please know how much we love and appreciate you. Your contribution to the kingdom is almost beyond description. We honor each of you.\n— Elder Quentin L. Cook (Apr 2021)'
                 }
             ]
         },
