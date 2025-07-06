@@ -1,16 +1,13 @@
 window.SectionPage = ({ section, onParagraphClick }) => {
-    const titleMatch = section.title.match(/^(.*?)\s*(\(D&C\s+.*?\))?$/);
-    const mainTitle = titleMatch ? titleMatch[1].trim() : section.title;
-    const scriptureReference = titleMatch && titleMatch[2] ? titleMatch[2].trim() : '';
 
     return (
         <div className="bg-white p-6 rounded-xl shadow-lg mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-2 pb-1">
-                {mainTitle}
+                {section.title}
             </h2>
-            {scriptureReference && (
+            {section.scriptures && (
                 <p className="text-lg text-gray-500 mb-6 border-b-2 border-blue-200 pb-3">
-                    {window.parseScriptureLinks(scriptureReference)}
+                    {window.parseScriptureLinks(section.scriptures)}
                 </p>
             )}
 

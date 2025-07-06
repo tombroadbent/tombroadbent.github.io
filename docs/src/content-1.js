@@ -1,10 +1,11 @@
 window.__content = () => ({
-    appTitle: 'The Lord’s Work and Its Critics',
+    appTitle: 'D&C 71-75',
     sectionsData: [
         {
             id: 'background_and_overview',
             title: 'Background and Overview',
             navTitle: 'Overview',
+            scriptures: 'D&C 71:1; 71:9',
             content: [
                 {
                     type: 'quote',
@@ -24,8 +25,9 @@ window.__content = () => ({
         },
         {
             id: 'booth_and_ryder',
-            title: 'Booth & Ryder',
+            title: 'Ezra Booth & Symonds Ryder',
             navTitle: 'B&R',
+            scriptures: 'D&C 71:7',
             content: [
                 {
                     type: 'subheader',
@@ -92,8 +94,9 @@ window.__content = () => ({
         },
         {
             id: 'preaching_the_gospel',
-            title: 'Preaching the Gospel (D&C 71:1–10)',
+            title: 'Preaching the Gospel',
             navTitle: 'Preach',
+            scriptures: 'D&C 71:1; 71:3–4; 71:7; 71:9–10',
             content: [
                 {
                     type: 'subheader',
@@ -252,8 +255,9 @@ window.__content = () => ({
         },
         {
             id: 'wisdom_and_understanding',
-            title: 'Wisdom and Spiritual Understanding (D&C 71:5–6)',
+            title: 'Wisdom and Understanding',
             navTitle: 'Wisdom',
+            scriptures: 'D&C 71:5-6',
             content: [
                 {
                     type: 'subheader',
@@ -366,8 +370,9 @@ window.__content = () => ({
         },
         {
             id: 'absence_of_comma_dc72_4',
-            title: 'The Absence of a Comma in D&C 72:4',
+            title: 'Time and Stewardship',
             navTitle: 'Time',
+            scriptures: 'D&C 72:3-4',
             content: [
                 {
                     type: 'scripture',
@@ -446,8 +451,9 @@ window.__content = () => ({
         },
         {
             id: 'ministry_of_bishops',
-            title: 'The Lord blesses me through the ministry of leaders like bishops',
+            title: 'The Ministry of Bishops',
             navTitle: 'Bishops',
+            scriptures: 'D&C 72:5, 10, 12',
             content: [
                 {
                     type: 'quote',
@@ -485,8 +491,9 @@ window.__content = () => ({
         },
         {
             id: 'opportunity_to_share_dc73',
-            title: 'I Have Many Opportunities to Share the Savior’s Gospel',
+            title: 'Opportunities to Share the Gospel',
             navTitle: 'Share',
+            scriptures: 'D&C 73:4, 6; 75:1–4; 75:18–21; 75:23–25; 75:28–30',
             content: [
                 {
                     type: 'paragraph',
@@ -590,8 +597,9 @@ window.__content = () => ({
         },
         {
             id: 'missionary_principles_dc75',
-            title: 'What Principles or Methods Does the Lord Give for Missionary Work?',
+            title: 'Missionary Principles',
             navTitle: 'Work',
+            scriptures: 'D&C 75:1–5; 75:6–12; 75:13–22; 75:23–36',
             content: [
                 {
                     type: 'subheader',
@@ -709,8 +717,9 @@ window.__content = () => ({
         },
         {
             id: 'false_prophet_encounter',
-            title: 'Joseph Smith’s Bold Declaration to a False Prophet',
+            title: 'False Prophet Encounter',
             navTitle: 'Devil',
+            scriptures: '',
             content: [
                 {
                     type: 'subheader',
