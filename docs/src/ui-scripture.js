@@ -1,9 +1,9 @@
 window.ScriptureBlock = function ScriptureBlock({ items, onParagraphClick }) {
     return (
-        <div className="bg-gray-100 border border-gray-300 rounded-2xl px-4 shadow-sm">
+        <div className="bg-gray-100 border border-gray-300 rounded-2xl p-4 pt-2 shadow-sm">
             {items.map(({ scripture, citation, context, meaning }, index) => {
                 return (
-                    <div key={index} className={`py-2 ${index !== 0 ? 'border-t border-gray-300 mt-2 pt-4' : ''}`}>
+                    <div key={index} className={`${index !== 0 ? 'border-t border-gray-300 mt-2 py-2' : ''}`}>
                         <div className="text-lg font-bold text-gray-900 mb-1">
                             {window.parseScriptureLinks(scripture)}
                         </div>
@@ -25,7 +25,7 @@ window.ScriptureBlock = function ScriptureBlock({ items, onParagraphClick }) {
                         </div>
                         {meaning && (
                             <div
-                                className="bg-blue-50 text-blue-900 mt-2 px-2 py-1 rounded cursor-pointer"
+                                className="bg-blue-50 border border-blue-200 text-blue-900 mt-2 px-2 rounded cursor-pointer"
                                 onClick={() => onParagraphClick({ type: 'text', content: meaning })}
                             >
                                 {meaning}
