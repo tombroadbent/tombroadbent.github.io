@@ -128,6 +128,5 @@ window.parseScriptureLinks = (text) => {
 };
 
 window.parseMarkdownText = (text) => {
-    const parts = parseStringForMarkdown(text);
-    return parts.flat();
+    return parseStringForMarkdown(text).flat();
 };
