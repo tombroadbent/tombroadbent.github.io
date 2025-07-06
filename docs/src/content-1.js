@@ -496,7 +496,7 @@ window.__content = () => ({
             scriptures: 'D&C 73:4, 6; 75:1–4; 75:18–21; 75:23–25; 75:28–30',
             content: [
                 {
-                    type: 'paragraph',
+                    type: 'quote',
                     text: 'When Joseph Smith and Sidney Rigdon returned from their missionary assignment (see Doctrine and Covenants 71), the Lord told them to continue translating the Bible (see Guide to the Scriptures, “Joseph Smith Translation (JST),” Gospel Library). But this did not mean He wanted them to stop sharing the gospel. After all, sharing the gospel is part of the life of a disciple.'
                 },
                 {
@@ -532,6 +532,10 @@ window.__content = () => ({
                     ]
                 },
                 {
+                    type: 'paragraph',
+                    text: 'How I now end calls from my college kids:'
+                },
+                {
                     type: 'quote',
                     text: 'Now I give no more unto you at this time. Gird up your loins and be sober. (D&C 73:6)'
                 },
@@ -559,20 +563,6 @@ window.__content = () => ({
                     text: 'Doctrine and Covenants 75:1–16 — This revelation was given to those who had "given [their] names to go forth to proclaim [the Savior’s] gospel" (D&C 75:2).'
                 },
                 {
-                    type: 'list',
-                    items: [
-                        'How to Share the Gospel Effectively — What principles or methods does the Lord give?',
-                        'How the Lord Blesses and Supports Us — What promises or help does He offer?'
-                    ]
-                },
-                {
-                    type: 'question',
-                    questions: [
-                        'What does it mean to “tarry” or “be idle” in sharing the gospel?',
-                        'What does it look like to “labor with your might”? (D&C 75:3)'
-                    ]
-                },
-                {
                     type: 'scripture',
                     items: [
                         {
@@ -587,6 +577,13 @@ window.__content = () => ({
                             meaning: '',
                             context: ''
                         }
+                    ]
+                },
+                {
+                    type: 'question',
+                    questions: [
+                        'What does it mean to “tarry” or “be idle” in sharing the gospel?',
+                        'What does it look like to “labor with your might”? (D&C 75:3)'
                     ]
                 },
                 {
