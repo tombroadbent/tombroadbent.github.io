@@ -5,8 +5,9 @@ window.ScriptureBlock = function ScriptureBlock({ items, onParagraphClick }) {
                 return (
                     <div key={index}>
                         {index !== 0 && (
-                            <div className="bg-green-20 border-t border-gray-300 mt-2 pb-2"></div>
-                        )}
+                            <div className="pt-4 pb-2">
+                                <p className="border-t border-gray-300"/>
+                            </div>)}
                         <div className="text-lg font-bold text-gray-900 mb-1">
                             {window.parseScriptureLinks(scripture)}
                         </div>
