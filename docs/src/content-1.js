@@ -290,10 +290,6 @@ window.__content = () => ({
                     ]
                 },
                 {
-                    type: 'paragraph',
-                    text: 'James 3 contrasts the two: earthly wisdom is "sensual, devilish" (v.15), while divine wisdom is "pure, then peaceable, gentle... full of mercy" (v.17).'
-                },
-                {
                     type: 'subheader',
                     text: 'The Path from Data to Wisdom & Power'
                 },
@@ -316,15 +312,21 @@ window.__content = () => ({
                 },
                 {
                     type: 'paragraph',
-                    text: 'James 3 opens a crucial discussion on the nature of wisdom, challenging believers to consider the roots and fruits of what they believe and how they live. It invites us to discern the difference between wisdom that originates from God and that which stems from worldly motives. Godly wisdom brings peace and humility; worldly wisdom leads to pride and strife. True wisdom reflects the character of Christ and fosters harmony and righteousness.'
+                    text: 'There is a crucial distinction between wisdom that originates from God and that which stems from worldly motives. Godly wisdom brings peace and humility; worldly wisdom leads to pride and strife. True wisdom reflects the character of Christ and fosters harmony and righteousness.'
                 },
                 {
                     type: 'scripture',
                     items: [
                         {
+                            scripture: 'James 3:13',
+                            citation: 'Who is a wise man and endued with knowledge among you? let him shew out of a good conversation his works with meekness of wisdom.',
+                            meaning: '“Conversation” (in Old English 1600s) meant conduct or way of life. James teaches that true wisdom shows in how one lives—with humility and righteousness. “Endued” means gifted or endowed.',
+                            context: 'James challenges believers to demonstrate wisdom not by words alone but by living righteously and humbly, showing that true understanding is evident in conduct.'
+                        },
+                        {
                             scripture: 'James 3:15',
                             citation: 'This wisdom descendeth not from above, but is earthly, sensual, devilish.',
-                            meaning: 'This kind of wisdom originates from worldly motives and feeds pride, envy, and contention.',
+                            meaning: "The term 'wisdom' here is used with irony, refering not to divine insight but to self-serving, worldly cunning. James exposes this counterfeit wisdom as rooted in pride and destructive desires.",
                             context: 'James warns that bitter envying and strife in hearts indicate a false, selfish wisdom rooted in natural man tendencies rather than divine insight.'
                         },
                         {
