@@ -87,6 +87,16 @@ window.__content = () => ({
           text: 'The priesthood is obtained with an oath and covenant (D&C 84:31–44)'
         },
         {
+          type: 'paragraph',
+          text: 'The oath and covenant of the priesthood (see Doctrine and Covenants 84:31–44) has special application for Heavenly Father’s sons who are ordained to a priesthood office, but many of the promised blessings in these verses are available to all of God’s children.'
+        },
+        {
+          type: 'question',
+          questions: [
+            'What are these promises, and what does God ask us to do to receive them?'
+          ]
+        },
+        {
           type: 'scripture',
           items: [
             {
@@ -105,7 +115,19 @@ window.__content = () => ({
         },
         {
           type: 'quote',
-          text: '“It is interesting that in the oath and covenant of the priesthood [see D&C 84:31–44], the Lord uses the verbs obtain and receive. He does not use the verb ordain. It is in the temple that men and women—together—obtain and receive the blessings and power of both the Aaronic and Melchizedek Priesthoods.” — “Revealed Realities of Mortality,” Ensign, Jan. 2016, 21'
+          text: '“It is interesting that in the oath and covenant of the priesthood [see D&C 84:31–44], the Lord uses the verbs obtain and receive. He does not use the verb ordain. It is in the temple that men and women—together—obtain and receive the blessings and power of both the Aaronic and Melchizedek Priesthoods.” — Elder Paul B. Pieper, “Revealed Realities of Mortality,” Ensign, Jan. 2016, 21'
+        },
+        {
+          type: 'paragraph',
+          text: 'As you study D&C 84:31–44, ponder what it might mean to “obtain” and “receive” the priesthood.'
+        },
+        {
+          type: 'question',
+          questions: [
+            'How is this different from being ordained to a priesthood office?',
+            'What else does the Lord invite you to receive in these verses?',
+            'How are you doing that?'
+          ]
         },
         {
           type: 'question',
@@ -128,6 +150,13 @@ window.__content = () => ({
         {
           type: 'subheader',
           text: 'Living by the word of God brings light and truth into my life (D&C 84:43–61)'
+        },
+        {
+          type: 'question',
+          questions: [
+            'What truths do you find in D&C 84:43–61 that help you understand why you need to consistently study the word of God?',
+            'How has your “diligent heed to the words of eternal life” brought light, truth, and “the Spirit of Jesus Christ” into your life?'
+          ]
         },
         {
           type: 'scripture',
@@ -157,6 +186,17 @@ window.__content = () => ({
           text: 'The Lord will be with me when I am in His service (D&C 84:62–91)'
         },
         {
+          type: 'paragraph',
+          text: 'As you read these verses, you could identify ways the Lord said He would support His servants.'
+        },
+        {
+          type: 'question',
+          questions: [
+            'How might these promises apply to the work He has asked you to do?',
+            'For example, how have the promises in verse 88 been fulfilled in your life?'
+          ]
+        },
+        {
           type: 'scripture',
           items: [
             {
@@ -166,10 +206,42 @@ window.__content = () => ({
                 'And whoso receiveth you, there I will be also, for I will go before your face. I will be on your right hand and on your left, and my Spirit shall be in your hearts, and mine angels round about you, to bear you up.'
             },
             {
+              context: 'Blessings promised to those who faithfully preach the gospel.',
+              scripture: 'D&C 84:80',
+              citation:
+                '80 And any man that shall go and preach this gospel of the kingdom, and fail not to continue faithful in all things, shall not be weary in mind, neither darkened, neither in body, limb, nor joint; and a hair of his head shall not fall to the ground unnoticed. And they shall not go hungry, neither athirst.'
+            }
+          ]
+        },
+        {
+          type: 'scripture',
+          items: [
+            {
               context: 'Instruction to go forth without purse or scrip.',
               scripture: 'D&C 84:86',
               citation:
                 'Therefore, let no man among you, for this commandment is unto all the faithful who are called of God in the church unto the ministry, from this hour take purse or scrip, that goeth forth to proclaim this gospel of the kingdom.'
+            }
+          ]
+        },
+        {
+          type: 'scripture',
+          items: [
+            {
+              context: 'The Lord calls His high priests “friends” and gives a commandment to be as His friends were during His ministry.',
+              scripture: 'D&C 84:63, 77',
+              citation:
+                '63 And as I said unto mine apostles, even so I say unto you, for you are mine apostles, even God’s high priests; ye are they whom my Father hath given me; ye are my friends;\n\n77 And again I say unto you, my friends, for from henceforth I shall call you friends, it is expedient that I give unto you this commandment, that ye become even as my friends in days when I was with them, traveling to preach the gospel in my power;'
+            }
+          ]
+        }, {
+          type: 'scripture',
+          items: [
+            {
+              context: 'Instruction on departing from those who do not receive the gospel.',
+              scripture: 'D&C 84:92–93',
+              citation:
+                '92 He that receiveth you not, go away from him alone by yourselves, and cleanse your feet even with water, pure water, whether in heat or in cold, and bear testimony of it unto your Father which is in heaven, and return not again unto that man.\n\n93 And in whatsoever village or city ye enter, do likewise.'
             }
           ]
         }
@@ -202,7 +274,7 @@ window.__content = () => ({
       id: 'understandingly',
       title: 'Proclaiming Understandingly',
       scriptures: 'D&C 84:117',
-      navTitle: 'Understandingly',
+      navTitle: 'Understand',
       content: [
         {
           type: 'subheader',
@@ -218,6 +290,9 @@ window.__content = () => ({
                 'And verily I say unto you, the rest of my servants, go ye forth as your circumstances shall permit, in your several callings, unto the great and notable cities and villages, reproving the world in righteousness of all their unrighteous and ungodly deeds, setting forth clearly and understandingly the desolation of abomination in the last days.'
             }
           ]
+        }, {
+          type: 'quote',
+          text: "Understandingly:\n1 sympathetically aware of other people's feelings; tolerant and forgiving: people expect their doctor to be understanding.\n2 archaic having insight or good judgment."
         }
       ]
     }
