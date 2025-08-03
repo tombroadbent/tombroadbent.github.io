@@ -44,6 +44,10 @@ window.__content = () => ({
           text: 'When a woman—young or old—is set apart to preach the gospel as a full-time missionary, she is given priesthood authority to perform a priesthood function. — Elder Dallin H. Oaks, April 2014'
         },
         {
+          type: 'paragraph',
+          text: 'Home blessings by sister missionaries.'
+        },
+        {
           type: 'quote',
           text: 'A person who holds the priesthood is not able to confer his office or authority on another unless authorized by one who holds the keys. Without that authorization, the ordination would be invalid. This explains why a priesthood holder—regardless of office—cannot ordain a member of his family or administer the sacrament in his own home without authorization from the one who holds the appropriate keys. — Elder Dallin H. Oaks, April 2014'
         },
