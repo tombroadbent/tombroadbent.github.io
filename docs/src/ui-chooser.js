@@ -2,6 +2,7 @@ window.ContentSwitcherOverlay = ({ setAppTitle, setSectionsData, setActiveSectio
   const contentMap = {
     'Demo': () => window.loadContentFile('src/content.js'),
     'D&C 71-75': () => window.loadContentFile('src/content-1.js'),
+    'D&C 84': () => window.loadContentFile('src/content-2.js'),
   };
 
   return (

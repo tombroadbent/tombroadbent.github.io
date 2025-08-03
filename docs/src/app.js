@@ -8,7 +8,7 @@ window.App = () => {
     const navListRef = React.useRef(null);
     const [allPageSavedScrollOffset, setAllPageSavedScrollOffset] = React.useState(0);
 
-    const defaultContentFile = 'src/content-1.js';
+    const defaultContentFile = 'src/content-2.js';
     const defaultSectionIndex = 0;
     React.useEffect(() => {
         (async () => {
